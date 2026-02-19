@@ -1,0 +1,18 @@
+body {
+  background-color: hsl(20, 50%, 98%);
+  font-family: "Red Hat Text", sans-serif;
+  padding: 1rem;
+}
+
+/* Mobile First Approach */
+@media (min-width: 640px) {
+  body {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 2rem;
+  }
+}

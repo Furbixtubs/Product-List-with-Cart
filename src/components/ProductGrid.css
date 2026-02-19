@@ -1,0 +1,72 @@
+.product-grid-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  color: #333;
+  font-weight: 700;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+/* Small mobile (320px+) - 1 column */
+@media (min-width: 320px) {
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .product-grid-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+/* Mobile landscape (640px+) - 2 columns */
+@media (min-width: 640px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .product-grid-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Tablet (768px+) - 3 columns */
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .product-grid-title {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+/* Large tablet (1024px+) */
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .product-grid-title {
+    font-size: 2.25rem;
+  }
+}
+
+/* Large desktop (1280px+) */
+@media (min-width: 1280px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}

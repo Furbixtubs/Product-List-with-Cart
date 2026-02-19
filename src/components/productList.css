@@ -1,0 +1,160 @@
+.cart-container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.product-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.02);
+}
+
+.add-cart-btn {
+  position: absolute;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(14, 25%, 72%);
+  border: 2px solid hsl(14, 25%, 72%);
+  border-radius: 50px;
+  cursor: pointer;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.add-cart-btn:hover {
+  background-color: hsl(14, 86%, 42%);
+  border-color: hsl(14, 86%, 42%);
+  color: white;
+}
+
+.add-cart-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Product Info */
+section > div:last-child {
+  padding-top: 1rem;
+}
+
+.title-para {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0.25rem 0;
+  color: #333;
+}
+
+section > div:last-child p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+section > div:last-child p:last-child {
+  font-weight: 600;
+  color: #c73b1d;
+  font-size: 1rem;
+}
+
+/* Overlay - Quantity Controls */
+.overlay {
+  position: absolute;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 600;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  background-color: hsl(14, 86%, 42%);
+  padding: 0.75rem 1.25rem;
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.qty-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qty-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.qty-number {
+  margin: 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  min-width: 1.5rem;
+  text-align: center;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 639px) {
+  .add-cart-btn,
+  .overlay {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+    bottom: -16px;
+  }
+
+  .qty-btn {
+    width: 20px;
+    height: 20px;
+    font-size: 0.9rem;
+  }
+
+  .qty-number {
+    font-size: 0.9rem;
+    margin: 0 0.5rem;
+  }
+
+  .title-para {
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .product-image {
+    border-radius: 10px;
+  }
+
+  .add-cart-btn,
+  .overlay {
+    bottom: -18px;
+  }
+}

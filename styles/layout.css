@@ -1,0 +1,29 @@
+.app {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .app {
+    gap: 2rem;
+  }
+}
+
+/* Desktop layout - sidebar */
+@media (min-width: 1024px) {
+  .app {
+    grid-template-columns: 1fr 350px;
+    gap: 2rem;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1280px) {
+  .app {
+    grid-template-columns: 1fr 400px;
+  }
+}
