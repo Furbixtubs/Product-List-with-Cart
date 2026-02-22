@@ -1,5 +1,5 @@
 import cart from "../assets/images/icon-add-to-cart.svg";
-import "../components/ProductList.css";
+import "./productList.css";
 import { useState } from "react";
 
 export default function ProductList({ product, onAddToCart }) {
